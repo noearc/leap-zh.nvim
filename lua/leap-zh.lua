@@ -1,4 +1,3 @@
-local jieba = require("jieba")
 local flypy_table = require("flypy")
 local M = {}
 
@@ -68,6 +67,7 @@ local parse = function(startline, endline)
 end
 
 local parse_jieba = function()
+	local jieba = require("jieba")
 	local cum_l = 1
 	local parsed = {}
 	local str = vim.api.nvim_get_current_line()

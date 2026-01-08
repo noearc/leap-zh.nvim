@@ -4,9 +4,16 @@
 
 ## 安装
 
+使用 [lazy.nvim](https://github.com/folke/lazy.nvim) 插件管理器:
+
 ```lua
--- dependency 可以不要
-  { 'noearc/leap-zh.nvim', dependencies = { 'noearc/jieba-lua' } }
+  {
+    'noearc/leap-zh.nvim',
+    dependencies = {
+      'https://codeberg.org/andyg/leap.nvim',
+      'noearc/jieba-lua', -- 可选: 启用jieba分词
+    },
+  }
 ```
 
 ## 键位
